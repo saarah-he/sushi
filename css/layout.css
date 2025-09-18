@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'Helvetica'
+}
+p{
+  margin-top: 0;
+}
+.front-image-area{
+  margin-top:0px;
+  height: 750px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/photos/front_photo.jpeg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.title-text{
+  color: rgb(204, 202, 202);
+  display: flex;
+  width: 40%;
+  height: 100%;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 150px;
+}
+.title-sushi{
+  font-size:100px;
+}
+.title-desc{
+  font-size: 30px;
+}
+.title-menu-button{
+  margin-top: 20px;
+  padding: 13px 18px;
+  background-color: rgb(204, 202, 202);
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  font-size: 20px;
+  transition: background-color 0.15s;
+}
+.title-menu-button:hover{
+  background-color: rgb(164, 164, 164);
+}
+.title-menu-button:active{
+  background-color: rgb(141, 141, 141);
+}
+
+.nextbox{
+  height: 500px;
+}
+
+.contact{
+  background-color: rgb(27, 27, 27);
+  color: rgb(204, 202, 202);
+  height: 750px;
+}
+.contact-title{
+  padding-top: 90px;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 650;
+}
+.contact-row{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 400px;
+  flex-wrap: wrap;
+}
+.contact-boxes{
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 17px;
+}
+.open-text{
+  font-weight: bold;
+  font-size: 35px;
+}
+.contact-info{
+  margin-top: 25px;
+  font-size: 18px;
+}
+.social{
+  padding-top: 25px;
+  height: 35px;
+  width: auto;
+}
