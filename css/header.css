@@ -44,3 +44,6 @@ header{
   text-decoration: overline;
 
 }
+.nav-link.active{
+  color: rgb(170, 170, 170);
+}
