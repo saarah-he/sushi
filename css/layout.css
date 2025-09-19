@@ -10,7 +10,7 @@ p{
   margin-top:0px;
   height: 800px;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/../photos/front_photo.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(../photos/front_photo.jpeg);
   background-attachment: fixed;
   background-size:cover;
   background-position: center;
