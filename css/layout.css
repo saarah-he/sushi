@@ -8,9 +8,10 @@ p{
 }
 .front-image-area{
   margin-top:0px;
-  height: 750px;
+  height: 800px;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/photos/front_photo.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(/../photos/front_photo.jpeg);
+  background-attachment: fixed;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,9 +29,11 @@ p{
 }
 .title-sushi{
   font-size:100px;
+  font-weight: lighter;
 }
 .title-desc{
   font-size: 30px;
+  font-weight: lighter;
 }
 .title-menu-button{
   margin-top: 20px;
@@ -39,7 +42,7 @@ p{
   display: inline-block;
   text-decoration: none;
   color: rgb(27, 27, 27);
-  font-size: 20px;
+  font-size: 15px;
   transition: background-color 0.15s;
 }
 .title-menu-button:hover{
@@ -85,6 +88,7 @@ p{
 .contact-info{
   margin-top: 25px;
   font-size: 18px;
+  font-weight: lighter;
 }
 .social{
   padding-top: 25px;
