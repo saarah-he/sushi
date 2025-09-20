@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family:'Helvetica'
+  font-family:'Helvetica';
 }
 p{
   margin-top: 0;
@@ -54,6 +54,33 @@ p{
   background-color: rgb(141, 141, 141);
 }
 
+/* OPTIONS SECTION */
+.option-area{
+  height: 550px;
+  display: flex;
+  background-color: rgb(204, 202, 202);
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px
+}
+.option-box{
+  width: 90%;
+  height: 80%;
+  display: flex;
+  background-color: rgb(204, 202, 202);
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex: 1fr 1fr 1fr
+}
+.option-item{
+  background-color: rgb(217, 217, 217);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+}
+
 /* POPULAR SECITON*/
 .popular-area{
   height: 650px;
@@ -61,6 +88,7 @@ p{
   background-color: rgb(204, 202, 202);
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .popular-box{
   display: flex;
@@ -68,13 +96,18 @@ p{
   width: 90%;
   height: 80%;
   background-color: rgb(217, 217, 217);
-  min-width: 800px;
+  min-width: 950px;
   box-sizing: border-box; 
+  border-radius: 2px;
   padding-right:30px;
+  padding-left:20px;
 }
 .popular-title{
-  padding-left: 30px;
-  padding-top: 20px
+  padding-left: 60px;
+  padding-top: 30px;
+  color: rgb(27, 27, 27);
+  font-weight: 350;
+  font-size: 30px;
 }
 .popular-desc{
   display: grid;
@@ -86,30 +119,39 @@ p{
 .popular-foods{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:20px;
+  gap:30px;
   padding-right: 20px;
 }
 .popular-item{
   display: grid;
   grid-template-rows: 3fr 1fr;
   height: 90%;
+  transition: background-color 0.2s;
+  border-radius: 8px;
+}
+.popular-item:hover{
+  background-color: rgb(208, 208, 208);
+  cursor: pointer;
+}
+.popular-item:active{
+  background-color: rgb(198, 198, 198);
 }
 .popular-pic{
   object-fit:contain;
-  width: 70%;
+  width: 60%;
   aspect-ratio: 1/1;
   justify-self: center;
   align-self: center;
-  min-width: 150px;  
-  min-height: 150px;
+  min-width: 200px;  
+  min-height: 200px;
 }
 .popular-name{
   justify-self: center; 
   align-self: center;
   align-self: start;
   font-size: 18px;
-  font-weight: lighter;
-  padding-top: 50px;
+  font-weight: 100;
+  padding-top: 40px;
   text-shadow: 0 2px 2px gba(0,0,0,0.3);;
 }
 .popular-more{
@@ -118,14 +160,25 @@ p{
   
 }
 .popular-button{
-  font-size: 15px;
-  font-weight: lighter;
-  padding:15px 15px;
+  font-size: 17px;
+  font-weight:100;
+  padding:18px 18px;
   border-radius: 30px;
-  color:rgb(27, 27, 27);
-  border: 1.5px solid rgb(27, 27, 27);
-  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-
+  border: none;
+  color:rgb(204, 202, 202);
+  background-color:rgb(54, 54, 54);
+  box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
+  white-space: nowrap;
+  font-family: helvetica;
+  transition: background-color 0.15s;
+}
+.popular-button:hover{
+  background-color: rgb(68, 68, 68);
+  cursor: pointer;
+}
+.popular-button:active{
+  background-color: rgb(80, 80, 80);
+  cursor: pointer;
 }
 
 
