@@ -2,7 +2,7 @@ header{
   left:0;
   right:0;
   top: 0;
-  height: 70px;
+  height: 65px;
   background-color: rgb(27, 27, 27);
   margin: 0;
   position: sticky;
@@ -11,6 +11,7 @@ header{
   padding: 0 80px 0 55px;
   display: flex;
   box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
 
 .header a {
@@ -24,7 +25,7 @@ header{
 }
 
 .logo{
-  font-size: 43px;
+  font-size: 40px;
   font-family:'Playfair Display', serif;
 }
 
@@ -37,7 +38,7 @@ header{
 }
 
 .nav-link{
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 250;
   transition: color 0.15s;
 }

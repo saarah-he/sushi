@@ -11,13 +11,13 @@
       <a class="logo" href="index.html">Sushi</a>
     </div>
     <div class="navs">
-      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link active" href="#home">Home</a>
       <a class="nav-link" href="menu.html">Menu</a>
-      <a class="nav-link" href="wtvelse.html">Whatever</a>
-      <a class="nav-link" href="index.html">Other</a>
+      <a class="nav-link" href="#about-us">About Us</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </div>
   </header>
-  <div class="front-image-area">
+  <div class="front-image-area" id="home">
     <div class="title-text">
       <div class="title-sushi">Papa Sushi</div>
       <div class="title-desc">Authentic japanese food smt smt</div>
@@ -25,6 +25,49 @@
     </div>
   </div>
   <main>
+    <section class="duo-area">
+      <div class="duo-box">
+        <div class="duo-item">
+          <div class="duo-pic1"></div>
+          <div class="duo-desc">
+            <div class="duo-title">Seasonal Promotion</div>
+            <div class="duo-text">Treat yourself! Spend <strong>$40 or more before tax</strong> and enjoy a <strong>FREE sushi cone</strong> of your choice — fresh, delicious, and made just for you on the house! 🎉</div>
+          </div>
+        </div>
+        <div class="duo-item">
+          <div class="duo-desc">
+            <div class="duo-title">What's New</div>
+            <div class="duo-text">Introducing our <strong>Sushi Taco 🌮</strong> — a crispy shell packed with fresh fish, vibrant toppings, and bold flavors. Try it today!</div>
+            <a href="menu.html" class="title-menu-button">VIEW MENU</a>
+          </div>
+          <div class="duo-pic2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="popular-area">
+      <div class="popular-box">
+        <h2 class="popular-title">Customer Favorites</h2>
+        <div class="popular-desc">
+          <div class="popular-foods">
+            <div class="popular-item">
+              <img class="popular-pic"src="./photos/salmon-poke.png">
+              <p class="popular-name">1. Salmon Poke Bowl</p>
+            </div>
+            <div class="popular-item">
+              <img class="popular-pic" src="./photos/rainbow.png">
+              <p class="popular-name">2. Rainbow</p>
+            </div>
+            <div class="popular-item">
+              <img class="popular-pic" src="./photos/salmon-nigiri.png">
+              <p class="popular-name">3. Salmon Nigiri</p>
+            </div>
+          </div>
+          <div class="popular-more">
+            <button class="popular-button">Full Menu ></button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="option-area">
       <div class="option-box">
         <div class="option-item">
@@ -44,57 +87,31 @@
         </div>
       </div>
     </section>
-    <section class="popular-area">
-      <div class="popular-box">
-        <h2 class="popular-title">- Customer Favorites -</h2>
-        <div class="popular-desc">
-          <div class="popular-foods">
-            <div class="popular-item">
-              <img class="popular-pic"src="./photos/salmon-poke.png">
-              <p class="popular-name">1- Salmon Poke Bowl</p>
-            </div>
-            <div class="popular-item">
-              <img class="popular-pic" src="./photos/rainbow.png">
-              <p class="popular-name">2- Rainbow</p>
-            </div>
-            <div class="popular-item">
-              <img class="popular-pic" src="./photos/salmon-nigiri.png">
-              <p class="popular-name">3- Salmon Nigiri</p>
-            </div>
-          </div>
-          <div class="popular-more">
-            <button class="popular-button">Full Menu ></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="duo-area">
-      <div class="duo-box">
-        <div class="duo-item">
-          <div class="duo-pic"></div>
-          <div class="duo-desc">
-            <div>about us</div>
-            <div> family owned resto</div>
-          </div>
-        </div>
-        <div class="duo-item">
-          <div class="duo-desc">
-            <div>whats new</div>
-            <div> new food or smt</div>
-          </div>
-          <div class="duo-pic"></div>
-        </div>
-      </div>
-    </section>
-    <section class="about-area">
+    <section class="about-area" id="about-us">
       <div class="about-box">
-        <div>
-          
+        <div class="about-pic"></div>
+        <div class="about-desc">
+          <div class="about-title">About Us</div>
+          <div class="about-text"> We're a family owned restaurant. Opened in Montreal since 2010 ish, blablabla continue blablabla</div>
+        </div>
+      </div>
+    </section>
+    <section class="review-area">
+      <div class="review-box">
+        <div class="review-pic"></div>
+        <div class="review-desc">
+          <div class="review-title">A Word From Our Customers</div>
+          <div class="review-quotes">
+            <img class="review-marks" src="./photos/quote-left.png">
+            <div class="review-text"> "This is the first customer reivew. One of three or four maybe that can be scrolled through. Will need some JS though, so task for later"</div>
+            <img class="review-marks" src="./photos/quote-right.png">
+          </div>
+          <div class="review-name">- Person Name</div>
         </div>
       </div>
     </section>
   </main>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="contact-title">
       Come visit us
     </div>
@@ -125,9 +142,8 @@
       <div class="contact-boxes">
         Join us? smt smt ill do later
       </div>
-
     </div>
-    
   </section>
+  <a href="#home" class="back-to-top">↑</a>
 </body>
 </html>
