@@ -39,20 +39,24 @@ p{
 }
 .title-menu-button{
   margin-top: 20px;
-  padding: 13px 18px;
-  background-color: rgb(204, 202, 202);
+  padding: 18px 18px;
+  border-radius: 30px;
+  color: rgb(204, 202, 202);
   display: inline-block;
   text-decoration: none;
-  color: rgb(27, 27, 27);
+  background-color: rgb(117, 34, 34);
   font-size: 15px;
+  box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
   transition: background-color 0.15s;
 }
+
 .title-menu-button:hover{
-  background-color: rgb(164, 164, 164);
+  background-color: rgb(103, 32, 32);
 }
 .title-menu-button:active{
-  background-color: rgb(141, 141, 141);
+  background-color: rgb(90, 26, 26);
 }
+
 
 /* OPTIONS SECTION */
 .option-area{
@@ -71,7 +75,9 @@ p{
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex: 1fr 1fr 1fr
+  flex: 1fr 1fr 1fr;
+  min-width: 950px;
+  
 }
 .option-item{
   background-color: rgb(217, 217, 217);
@@ -79,7 +85,29 @@ p{
   justify-content: center;
   height: 100%;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  border-radius: 2px;
 }
+.option-pic{
+  width: auto;
+  height: 40%;
+  justify-self: center;
+  align-self: center;
+}
+.option-name{
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 60px;
+  color: rgb(161, 59, 59);
+}
+.option-desc{
+  font-size: 15px;
+  font-weight: 100;
+  padding-top: 15px
+}
+
 
 /* POPULAR SECITON*/
 .popular-area{
@@ -105,9 +133,9 @@ p{
 .popular-title{
   padding-left: 60px;
   padding-top: 30px;
-  color: rgb(27, 27, 27);
-  font-weight: 350;
-  font-size: 30px;
+  color: rgb(161, 59, 59);
+  font-weight: 400;
+  font-size: 32px;
 }
 .popular-desc{
   display: grid;
@@ -126,11 +154,12 @@ p{
   display: grid;
   grid-template-rows: 3fr 1fr;
   height: 90%;
-  transition: background-color 0.2s;
+  transition: background-color 0.15s, color 0.15s;
   border-radius: 8px;
 }
 .popular-item:hover{
   background-color: rgb(208, 208, 208);
+  color: rgb(161, 59, 59);
   cursor: pointer;
 }
 .popular-item:active{
@@ -148,10 +177,9 @@ p{
 .popular-name{
   justify-self: center; 
   align-self: center;
-  align-self: start;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 100;
-  padding-top: 40px;
+  padding-top: 35px;
   text-shadow: 0 2px 2px gba(0,0,0,0.3);;
 }
 .popular-more{
@@ -166,22 +194,61 @@ p{
   border-radius: 30px;
   border: none;
   color:rgb(204, 202, 202);
-  background-color:rgb(54, 54, 54);
+  background-color:rgb(129, 37, 37);
   box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
   white-space: nowrap;
   font-family: helvetica;
   transition: background-color 0.15s;
 }
 .popular-button:hover{
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(114, 35, 35);
   cursor: pointer;
 }
 .popular-button:active{
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(90, 26, 26);
   cursor: pointer;
 }
 
 
+/* DUO SECTION */
+.duo-area{
+  height: 1000px;
+  display: flex;
+  background-color: rgb(204, 202, 202);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.duo-box{
+  display: flex;
+  width: 90%;
+  height: 85%;
+  min-width: 950px;
+  flex: 1fr 1fr;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+.duo-item{
+  background-color: rgb(217, 217, 217);
+  align-items: center;
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column; 
+  flex: 2fr 1fr;
+}
+.duo-pic {
+  width: 100%;
+  margin: 0;
+  height: 510px;
+  background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+    url("../photos/about-us.webp") center/cover no-repeat;
+}
+.duo-desc{
+  margin: 0;
+  height: 340px;
+}
 
 
 /* CONTACT SECITON*/

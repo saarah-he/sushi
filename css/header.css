@@ -39,11 +39,14 @@ header{
 .nav-link{
   font-size: 20px;
   font-weight: 250;
+  transition: color 0.15s;
 }
 .nav-link:hover{
   text-decoration: overline;
+  color: rgb(161, 59, 59);
 
 }
 .nav-link.active{
-  color: rgb(170, 170, 170);
+  text-decoration: overline;
+  color: rgb(161, 59, 59);
 }
