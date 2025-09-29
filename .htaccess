@@ -1,0 +1,13 @@
+# Enable Apache rewrite engine (common for static sites, useful if you later add redirects)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
+
+# Block access to the .git folder (prevents people from seeing your Git history)
+RedirectMatch 404 /\.git
+
+# Optional: Set default index file
+DirectoryIndex index.html
+
+# Optional: Force UTF-8 encoding for text files
+AddDefaultCharset UTF-8
