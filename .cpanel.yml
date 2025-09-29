@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOY_DIR=$HOME/public_html
+    - cp -R * $DEPLOY_DIR

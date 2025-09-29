@@ -5,7 +5,9 @@ body{
   margin: 0;
   padding: 0;
   font-family:'Helvetica';
+  background-color: (204, 202, 202);
 }
+
 p{
   margin-top: 0;
 }
@@ -79,6 +81,7 @@ p{
   min-width: 950px;
   flex: 1fr 1fr;
   justify-content: space-between;
+  
 }
 .duo-item{
   background-color: rgb(221, 221, 221);
@@ -87,6 +90,7 @@ p{
   display: flex;
   flex-direction: column; 
   flex: 2fr 1fr;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .duo-pic1 {
   width: 100%;
@@ -144,13 +148,14 @@ p{
   border-radius: 2px;
   padding-right:30px;
   padding-left:20px;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .popular-title{
   padding-left: 60px;
   padding-top: 30px;
   color: rgb(161, 59, 59);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 35px;
 }
 .popular-desc{
   display: grid;
@@ -171,6 +176,7 @@ p{
   height: 90%;
   transition: background-color 0.15s, color 0.15s;
   border-radius: 8px;
+  
 }
 .popular-item:hover{
   background-color: rgb(208, 208, 208);
@@ -257,6 +263,7 @@ p{
   flex-direction: column;
   min-width: 300px;
   border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .option-pic{
   width: auto;
@@ -293,6 +300,7 @@ p{
   background-color: rgb(221, 221, 221);
   display: flex;
   min-width: 950px;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .about-pic{
   position:absolute;
@@ -306,6 +314,7 @@ p{
   border-top-left-radius: 255px;
   border-top-right-radius: 255px;
   z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .about-desc {
   width: 57.5%;
@@ -352,6 +361,7 @@ p{
   display: flex;
   min-width: 950px;
   justify-content: flex-end;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .review-pic{
   position:absolute;
@@ -365,6 +375,7 @@ p{
   border-top-left-radius: 255px;
   border-top-right-radius: 255px;
   z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .review-desc {
   width: 57.5%;
