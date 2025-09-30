@@ -3,9 +3,9 @@ html {
 }
 body{
   margin: 0;
-  padding: 0;
+  padding:0 ;
   font-family:'Helvetica';
-  background-color: (204, 202, 202);
+  background-color: rgb(245, 245, 245);
 }
 
 p{
@@ -22,7 +22,7 @@ p{
   background-repeat: no-repeat;
 }
 .title-text{
-  color: rgb(204, 202, 202);
+  color: rgb(228, 228, 228);
   display: flex;
   width: 40%;
   height: 100%;
@@ -33,9 +33,11 @@ p{
   padding-left: 10%;
 }
 .title-sushi{
-  font-size:90px;
+  font-size:110px;
+  font-weight: 700;
   font-weight: lighter;
   white-space: nowrap;
+  font-family: 'Cormorant Garamond';
 }
 .title-desc{
   font-size: 28px;
@@ -46,7 +48,7 @@ p{
   margin-top: 19px;
   padding: 17px 18px;
   border-radius: 30px;
-  color: rgb(204, 202, 202);
+  color: white;
   display: inline-block;
   text-decoration: none;
   background-color: rgb(117, 34, 34);
@@ -65,13 +67,13 @@ p{
 
 /* DUO SECTION */
 .duo-area{
-  padding-top:30px;
+  padding-top:80px;
   height: 770px;
   display: flex;
-  background-color: rgb(204, 202, 202);
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 80px;
   
 }
 .duo-box{
@@ -84,13 +86,13 @@ p{
   
 }
 .duo-item{
-  background-color: rgb(221, 221, 221);
+  background-color: white;
   height: 100%;
   width: 48%;
   display: flex;
   flex-direction: column; 
   flex: 2fr 1fr;
-  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.2);
 }
 .duo-pic1 {
   width: 100%;
@@ -113,9 +115,10 @@ p{
   height: 260px;
 }
 .duo-title{
-  color: rgb(161, 59, 59);
-  font-weight: 400;
-  font-size: 35px;
+  color: rgb(113, 134, 94);
+  font-weight: 600;
+  font-size: 45px;
+  font-family: 'Cormorant Garamond';
 }
 .duo-text{
   padding-top:35px;
@@ -126,135 +129,189 @@ p{
   line-height: 1.6;
   letter-spacing: 0.3px;
 }
+.duo-menu-button{
+  margin-top: 19px;
+  padding: 17px 18px;
+  border-radius: 30px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(97, 111, 85);
+  font-size: 15px;
+  box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
+  transition: background-color 0.15s;
+}
+
+.duo-menu-button:hover{
+  background-color: rgb(103, 32, 32);
+}
+.duo-menu-button:active{
+  background-color: rgb(90, 26, 26);
+}
 
 
 /* POPULAR SECITON*/
 .popular-area{
-  height: 550px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  height: 600px;
   display: flex;
-  background-color: rgb(204, 202, 202);
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: white;
 }
 .popular-box{
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   height: 90%;
-  background-color: rgb(221, 221, 221);
+  background-color: white;
   min-width: 950px;
   box-sizing: border-box; 
   border-radius: 2px;
   padding-right:30px;
   padding-left:20px;
-  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
 }
 .popular-title{
-  padding-left: 60px;
-  padding-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 10px;
   color: rgb(161, 59, 59);
-  font-weight: 400;
-  font-size: 35px;
+  font-weight: 600;
+  font-size: 45px;
+  font-family: 'Cormorant Garamond';
+}
+.popular-subtitle{
+  padding-left: 55px;
+  padding-bottom: 10px;
+  color: rgb(40, 40, 40);
+  font-weight: 100;
+  font-size: 17px;
+  font-family:helvetica;
+  padding-bottom: 35px;
 }
 .popular-desc{
-  display: grid;
-  grid-template-columns: 1fr auto;
-  margin:10px 20px;
-  gap: 10px;
-  height: 90%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
 }
 .popular-foods{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap:30px;
-  padding-right: 20px;
-}
-.popular-item{
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-  height: 90%;
-  transition: background-color 0.15s, color 0.15s;
-  border-radius: 8px;
+  display: flex;
+  overflow:hidden;
+  scroll-behavior: smooth;
+  flex:1;
+  gap:20px;
   
 }
+.popular-item{
+  flex: 0 0 calc(25% - 15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.15s, color 0.15s;
+  border-radius: 8px;
+}
 .popular-item:hover{
-  background-color: rgb(208, 208, 208);
-  color: rgb(161, 59, 59);
+  background-color: rgb(241, 241, 241);
+  color: rgb(161, 59, 59);;
   cursor: pointer;
 }
 .popular-item:active{
-  background-color: rgb(198, 198, 198);
+  background-color: rgb(228, 228, 228);
 }
 .popular-pic{
   object-fit:contain;
-  width: 60%;
+  width: 75%;
+  min-width: 150px;
   aspect-ratio: 1/1;
   justify-self: center;
   align-self: center;
-  min-width: 200px;  
-  min-height: 200px;
 }
 .popular-name{
   justify-self: center; 
   align-self: center;
-  font-size:18px;
+  font-size:16px;
   font-weight: 100;
-  padding-top: 35px;
+  padding-top: 5px;
   text-shadow: 0 2px 2px gba(0,0,0,0.3);;
 }
-.popular-more{
-  justify-self: center;
-  padding-top: 150px;
-  
+.popular-arrow{
+  background: rgb(117, 34, 34);
+  color: white;
+  border:none;
+  font-size:1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 9px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.2s;
 }
-.popular-button{
+.popular-arrow:hover {
+  background: rgb(102, 29, 29);
+}
+.popular-more {
+  display: flex;
+  justify-content:center; 
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.popular-more-text {
   font-size: 17px;
-  font-weight:100;
-  padding:18px 18px;
-  border-radius: 30px;
-  border: none;
-  color:rgb(204, 202, 202);
-  background-color:rgb(129, 37, 37);
-  box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
-  white-space: nowrap;
-  font-family: helvetica;
-  transition: background-color 0.15s;
+  font-weight: 100;
+  font-family: Helvetica;
+  color: rgb(23, 23, 23);
+  text-align: left;
 }
-.popular-button:hover{
-  background-color: rgb(114, 35, 35);
+
+.popular-more-link {
+  color: rgb(161, 59, 59); /* brighter red for link */
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.popular-more-link:hover {
+  color: rgb(118, 37, 37);
   cursor: pointer;
 }
-.popular-button:active{
-  background-color: rgb(90, 26, 26);
-  cursor: pointer;
-}
+
 
 
 /* OPTIONS SECTION */
 .option-area{
-  height: 450px;
+  height: 500px;
   display: flex;
-  background-color: rgb(204, 202, 202);
   align-items: center;
   justify-content: center;
-  padding-top:20px;
-  padding-bottom: 20px
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.option-header {
+  width: 80%;
+  margin-bottom: 60px;
+}
+.option-title{
+  font-size:45px;
+  font-weight: 700;
+  font-family: 'Cormorant Garamond';
+  text-align: left;
+  width: 600px;
 }
 .option-box{
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 70%;
   display: flex;
-  background-color: rgb(204, 202, 202);
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex: 1fr 1fr 1fr;
   min-width: 950px;
-  
 }
 .option-item{
-  background-color: rgb(221, 221, 221);
+  background-color: white;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -263,31 +320,54 @@ p{
   flex-direction: column;
   min-width: 300px;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
-}
-.option-pic{
-  width: auto;
-  height: 40%;
-  justify-self: center;
-  align-self: center;
+  transition: background-color 0.2s, color 0.2s;
 }
 .option-name{
   font-size: 20px;
-  font-weight: 400;
-  padding-top: 60px;
-  color: rgb(161, 59, 59);
+  font-weight: 600;
+  padding-top: 40px;
+  font-family: 'Cormorant Garamond';
 }
 .option-desc{
   font-size: 15px;
   font-weight: 100;
-  padding-top: 15px
+  padding-top: 0;
+  width: 80%;
+  text-align: center;
 }
+.option-item:hover{
+  background-color: rgb(117, 34, 34);
+  color: white;
+}
+.option-pic{
+  width: auto;
+  height: 40%;
+  aspect-ratio: 1/1;
+  justify-self: center;
+  align-self: center;
+}
+.option-svg{
+  width: auto;
+  height: 100%;
+}
+.option-item .option-svg path{
+  fill:rgb(117, 34, 34);
+  transition: fill 0.2s, stroke 0.2s;
+}
+.option-item:hover .option-svg path{
+  fill: rgb(233, 150, 122);
+  stroke:rgb(233, 150, 122);
+}
+.moto {
+  transform: scale(0.92); /* Makes everything smaller */
+  transform-origin: center;
+}
+
 
 
 /* ABOUT US SECTION */
 .about-area{
   height: 700px;
-  background-color: rgb(204, 202, 202);
   display:flex;
   align-items: center;
   justify-content: flex-end;
@@ -297,7 +377,7 @@ p{
   position:relative;
   height: 75%;
   width: 85%;
-  background-color: rgb(221, 221, 221);
+  background-color: white;
   display: flex;
   min-width: 950px;
   box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
@@ -331,8 +411,9 @@ p{
 }
 .about-title{
   color: rgb(161, 59, 59);
-  font-weight: 400;
-  font-size: 35px;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: 'Cormorant Garamond';
 }
 .about-text{
   padding-top: 20px;
@@ -347,17 +428,17 @@ p{
 /* REVIEW SECTIONS */
 .review-area{
   height: 700px;
-  background-color: rgb(204, 202, 202);
   display:flex;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 30px;
+  padding-bottom: 130px;
+  padding-top:50px;
 }
 .review-box{
   position:relative;
   height: 75%;
   width: 85%;
-  background-color: rgb(221, 221, 221);
+  background-color: white;
   display: flex;
   min-width: 950px;
   justify-content: flex-end;
@@ -392,10 +473,11 @@ p{
 }
 .review-title{
   color: rgb(161, 59, 59);
-  font-weight: 400;
-  font-size: 35px;
+  font-weight: 600;
+  font-size: 40px;
   white-space: nowrap;
   margin-bottom: 20px;
+  font-family: 'Cormorant Garamond';
 }
 .review-quotes{
   display: flex;
@@ -404,7 +486,6 @@ p{
   width: 500px;
   height: 50%;
   gap: 18px;
-  background-color: rgb(221, 221, 221);
 
 }
 .review-marks{
@@ -445,8 +526,9 @@ p{
 .contact-title{
   padding-top: 80px;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
+  font-family: 'Cormorant Garamond';
 }
 .contact-row{
   display: flex;
@@ -464,7 +546,8 @@ p{
 }
 .open-text{
   font-weight: bold;
-  font-size: 33px;
+  font-size: 38px;
+  font-family: 'Cormorant Garamond';
 }
 .contact-info{
   margin-top: 25px;
