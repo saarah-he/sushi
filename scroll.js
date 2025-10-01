@@ -39,6 +39,18 @@ function updateArrows() {
     rightBtn.style.opacity = "1";
     rightBtn.style.cursor = "pointer";
   }
+  if (scrollContainer.scrollLeft <= 0) {
+    scrollContainer.classList.add("no-left-fade");
+  } else {
+    scrollContainer.classList.remove("no-left-fade");
+  }
+
+  if (scrollContainer.scrollLeft >= maxScrollLeft - 1) {
+    scrollContainer.classList.add("no-right-fade");
+  } else {
+    scrollContainer.classList.remove("no-right-fade");
+  }
+
 }
 
 // Run on load + whenever user scrolls
