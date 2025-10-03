@@ -15,7 +15,7 @@ p{
 main{
   display: grid;
   grid-template-columns: 250px 1fr;
-  height: 2000px;
+  height: 5100px;
   align-items: start;
 }
 
@@ -34,7 +34,12 @@ aside{
   font-size: 14px;
 }
 .sidebar-title{
-  padding-top: 10px
+  padding-top: 10px;
+
+  color: rgb(40, 40, 40);
+  font-family: helvetica;
+  font-weight: 400;
+  text-decoration: none;
 }
 .sidebar-option{
   text-decoration: none;
@@ -49,18 +54,38 @@ aside{
 
 /* FRONT AREA */
 .front-area{
-  height: 290px;
+  height: 300px;
   background-color: rgb(239, 239, 239);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:20px;
-  /* background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(../photos/menu-bg.jpg);
+  gap:0px;
+  position:relative;
+  /* background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url(../photos/jap-circle.webp);
   background-attachment: fixed;
-  background-size:cover;
+  background-size:contain;
   background-position: center;
   background-repeat: no-repeat; */
+}
+.front-pic-area{
+  height: 126%;
+  width: auto;
+  top:-33px;
+  bottom:0;
+  position:absolute;
+}
+/* .front-pic-area-left{
+  height: 100%;
+  width: auto;
+  top:0;
+  bottom:0;
+  left:50px;
+  position:absolute;
+} */
+.front-pic{
+  height: 100%;
+  object-fit: contain;
 }
 .front-title{
   color: rgb(40, 40, 40);/* color: rgb(146, 50, 50);rgb(113, 134, 94) */
@@ -73,6 +98,7 @@ aside{
   font-weight: 100;
   font-size: 16px;
   font-family:helvetica;
+  padding-bottom: 9px;
 }
 .front-pdf{
   color: rgb(40, 40, 40);
@@ -179,10 +205,48 @@ aside{
   width: 100%;
   height: auto;
   padding-bottom: 20px;
+  position:relative;
 }
 .menu-pic{
   width: 99%;
   object-fit: contain;
+}
+.menu-pic-area-abs{
+  position:absolute;
+  left:-26px;
+  bottom:-65px;
+  height: 50%;
+  width: 103%;
+  min-height: 150px;
+  min-width: 300px;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(40, 40, 40);
+  transition: height 0.15s, width 0.15s, left 0.15s, bottom 0.15s;
+}
+/* .menu-pic-area-abs:hover{
+  height: 51%;
+  width: 106%;
+  left:-31px;
+  bottom:-76px;
+} */
+.menu-abs-title{
+  font-family: 'Cormorant Garamond';    
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 30px;
+  text-align: start;
+  /* color: rgb(177, 15, 15); */
+}
+.menu-abs-text{
+  padding: 0 30px;
+  font-family: helvetica;
+  font-weight: 100;
+  font-size: 14px;
 }
 .menu-item-desc-no{
   font-family: helvetica;

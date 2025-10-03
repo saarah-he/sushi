@@ -15,7 +15,7 @@ p{
   margin-top:0px;
   height: 800px;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(../photos/front_photo.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../photos/front_photo.jpeg);
   background-attachment: fixed;
   background-size:cover;
   background-position: center;
@@ -51,7 +51,7 @@ p{
   color: white;
   display: inline-block;
   text-decoration: none;
-  background-color: rgb(117, 34, 34);
+  background-color: rgb(177, 15, 15);
   font-size: 15px;
   box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
   transition: background-color 0.15s;
@@ -92,7 +92,7 @@ p{
 }
 .duo-box{
   display: flex;
-  width: 90%;
+  width: 85%;
   height: 90%;
   min-width: 950px;
   flex: 1fr 1fr;
@@ -106,7 +106,7 @@ p{
   display: flex;
   flex-direction: column; 
   flex: 2fr 1fr;
-  box-shadow: 0 2px 4px rgba(0,0,0, 0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
 }
 .duo-pic1 {
   width: 100%;
@@ -129,7 +129,7 @@ p{
   height: 260px;
 }
 .duo-title{
-  color: rgb(161, 59, 59);/*rgb(113, 134, 94)*/
+  color: rgb(177, 15, 15);/*rgb(113, 134, 94)*/
   font-weight: 600;
   font-size: 45px;
   font-family: 'Cormorant Garamond';
@@ -150,17 +150,17 @@ p{
   color: white;
   display: inline-block;
   text-decoration: none;
-  background-color: rgb(117, 34, 34);/*rgb(97, 111, 85);*/
+  background-color: rgb(177, 15, 15);/*rgb(97, 111, 85);*/
   font-size: 15px;
   box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
   transition: background-color 0.15s;
 }
 
 .duo-menu-button:hover{
-  background-color: rgb(103, 32, 32);
+  background-color: rgb(149, 13, 13);
 }
 .duo-menu-button:active{
-  background-color: rgb(90, 26, 26);
+  background-color: rgb(133, 11, 11);
 }
 
 
@@ -190,7 +190,7 @@ p{
 .popular-title{
   padding-left: 50px;
   padding-bottom: 10px;
-  color: rgb(161, 59, 59);
+  color: rgb(177, 15, 15);
   font-weight: 600;
   font-size: 45px;
   font-family: 'Cormorant Garamond';
@@ -310,7 +310,7 @@ p{
   text-shadow: 0 2px 2px gba(0,0,0,0.3);;
 }
 .popular-arrow{
-  background: rgb(117, 34, 34);
+  background: rgb(177, 15, 15);
   color: white;
   border:none;
   font-size:1.5rem;
@@ -339,7 +339,7 @@ p{
 }
 
 .popular-more-link {
-  color: rgb(161, 59, 59); /* brighter red for link */
+  color: rgb(177, 15, 15);
   text-decoration: underline;
   font-weight: 600;
 }
@@ -376,7 +376,7 @@ p{
   height: 100%;
   width: auto;
   opacity: 0.15;
-  fill:rgb(117, 34, 34);
+  /* fill:rgb(177, 15, 15); */
 }
 .option-header {
   width: 80%;
@@ -425,7 +425,7 @@ p{
   text-align: center;
 }
 .option-item:hover{
-  background-color: rgb(117, 34, 34);
+  background-color: rgb(177, 15, 15);
   color: white;
 }
 .option-pic{
@@ -440,7 +440,7 @@ p{
   height: 100%;
 }
 .option-item .option-svg path{
-  fill:rgb(117, 34, 34);
+  fill:rgb(177, 15, 15);
   transition: fill 0.2s, stroke 0.2s;
 }
 .option-item:hover .option-svg path{
@@ -500,7 +500,7 @@ p{
   z-index: 2
 }
 .about-title{
-  color: rgb(161, 59, 59);
+  color: rgb(177, 15, 15);
   font-weight: 600;
   font-size: 40px;
   font-family: 'Cormorant Garamond';
@@ -563,7 +563,7 @@ p{
   z-index: 10;
 }
 .review-title{
-  color: rgb(161, 59, 59);
+  color: rgb(177, 15, 15);
   font-weight: 600;
   font-size: 40px;
   white-space: nowrap;
@@ -654,7 +654,7 @@ p{
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: rgb(129, 37, 37);
+  background: rgb(177, 15, 15);
   color: white;
   font-size: 28px;
   text-decoration: none;
@@ -665,7 +665,7 @@ p{
 }
 
 .back-to-top:hover {
-  background-color: rgb(111, 36, 36);
+  background-color: rgb(153, 13, 13);
   cursor: pointer;
 }
 

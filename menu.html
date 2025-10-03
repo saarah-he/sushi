@@ -9,19 +9,22 @@
   <!-- <link rel="stylesheet" href="css/layout.css"> -->
   <link rel="stylesheet" href="./css/menu.css">
 </head>
-<body>
+<body  id="menu">
   <header class="header">
     <div class="left">
+      <!-- <img class="header-pic" src="./photos/jap-circle2.png"> -->
       <a class="logo" href="index.html">Plat Sushi</a>
     </div>
     <div class="navs">
       <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link active" href="menu.html">Menu</a>
-      <a class="nav-link" href="wtvelse.html">About Us</a>
-      <a class="nav-link" href="index.html">Contact</a>
+      <a class="nav-link active" href=#menu>Menu</a>
+      <a class="nav-link" href="index.html#about-us">About Us</a>
+      <a class="nav-link" href="index.html#contact">Contact</a>
     </div>
   </header>
-  <section class="front-area">
+  <section class="front-area" >
+    <div class="front-pic-area"><img class="front-pic" src="./photos/jap-circle3.png"></div>
+    <!-- <div class="front-pic-area-left"><img class="front-pic" src="./photos/jap-circle.webp"></div> -->
     <div class="front-welc">Welcome to</div>
     <div class="front-title">Plat Sushi</div>
     <div class="front-pdf"><a>Download our menu in pdf ↗</a></div>
@@ -30,20 +33,19 @@
 
     <aside class="sidebar-area">
       <section class="sidebar">
-        <p class="sidebar-title">Classic Sushi</p>
+        <a class="sidebar-title" href="#section1">Classic Sushi</a>
         <a class="sidebar-option" href="#section1">Nigiri & Sashimi</a>
         <a class="sidebar-option" href="#section2">Hoso Maki</a>
         <a class="sidebar-option" href="#section3">Maki</a>
-        <a class="sidebar-option" href="#section4">Futomaki</a>
-        <p class="sidebar-title">Specialty Sushi</p>
-        <a class="sidebar-option" href="#section5">Fried Rolls</a>
-        <a class="sidebar-option" href="#section6">Rice Paper Maki</a>
-        <a class="sidebar-option" href="#section7">Sushi Cone</a>
-        <a class="sidebar-option" href="#section8">Sushi Pizza</a>
-        <p class="sidebar-title">Extras</p>
-        <a class="sidebar-option" href="#section9">Poke bowls</a>
-        <a class="sidebar-option" href="#section10">Combos</a>
-        <a class="sidebar-option" href="#section11">Others</a>
+        <a class="sidebar-option" href="#section4">Futo Maki</a>
+        <a class="sidebar-title" href="#section5">Specialty Sushi</a>
+        <a class="sidebar-option" href="#section5">Spring Maki</a>
+        <a class="sidebar-option" href="#section6">Fried Rolls</a>
+        <a class="sidebar-option" href="#section6">Sushi Pizza</a>
+        <a class="sidebar-title" href="#section7">Extras</a>
+        <a class="sidebar-option" href="#section7">Poke bowls</a>
+        <a class="sidebar-option" href="#section7">Others</a>
+        <a class="sidebar-option" href="#section8">Combos</a>
       </section>
     </aside>
     
@@ -171,7 +173,7 @@
                 <span class="menu-item-dots"></span>
                 <span class="menu-item-price">$2.45</span>
               </div>
-              <p class="menu-item-desc-no">1pc · Nigiri · Can be spicy</p>
+              <p class="menu-item-desc-no">Nigiri · Can be spicy</p>
             </div>
           </div>
         </div>
@@ -183,13 +185,19 @@
         <div class="menu-sections">
           <div class="menu-column">
             <div class="menu-pic-area">
-              <img class="menu-pic" src="./photos/hoso.jpeg">
+              <img class="menu-pic" src="./photos/hosomaki.jpg">
             </div>
             <div class="menu-item">
+              <p class="menu-item-name">Tuna Roll</p>
               <div class="menu-item-more">
-                <span class="menu-item-name">Avocado roll</span>
+                <span class="menu-item-option">REGULAR</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$3.45</span>
+                <span class="menu-item-price">$4.75</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">SPICY</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$4.95</span>
               </div>
             </div>
           </div>
@@ -203,7 +211,20 @@
               </div>
             </div>
             <div class="menu-item">
-              <p class="menu-item-name">Salmon</p>
+              <p class="menu-item-name">Shrimp Roll</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">REGULAR</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$4.75</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">SPICY</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$4.95</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Salmon Roll</p>
               <div class="menu-item-more">
                 <span class="menu-item-option">REGULAR</span>
                 <span class="menu-item-dots"></span>
@@ -221,19 +242,6 @@
               </div>
             </div>
             <div class="menu-item">
-              <p class="menu-item-name">Shrimp</p>
-              <div class="menu-item-more">
-                <span class="menu-item-option">REGULAR</span>
-                <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.75</span>
-              </div>
-              <div class="menu-item-more">
-                <span class="menu-item-option">SPICY</span>
-                <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.95</span>
-              </div>
-            </div>
-            <div class="menu-item">
               <div class="menu-item-more">
                 <span class="menu-item-name">Tamago roll</span>
                 <span class="menu-item-dots"></span>
@@ -245,22 +253,22 @@
           <div class="menu-column">
             <div class="menu-item">
               <div class="menu-item-more">
-                <span class="menu-item-name">Goberge Roll</span>
+                <span class="menu-item-name">Avocado roll</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$2.45</span>
+                <span class="menu-item-price">$3.45</span>
               </div>
             </div>
             <div class="menu-item">
-              <p class="menu-item-name">Tuna</p>
+              <p class="menu-item-name">Goberge Roll</p>
               <div class="menu-item-more">
                 <span class="menu-item-option">REGULAR</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.75</span>
+                <span class="menu-item-price">$2.75</span>
               </div>
               <div class="menu-item-more">
                 <span class="menu-item-option">SPICY</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.95</span>
+                <span class="menu-item-price">$2.95</span>
               </div>
             </div>
             <div class="menu-item">
@@ -284,64 +292,475 @@
         <div class="menu-category">
           <span>MAKI · 6 PCS</span>
         </div>
-        <!-- <div class="menu-sections">
-          <div class="menu-column">
-            <div class="menu-pic-area">
-              <img class="menu-pic" src="./photos/hoso.jpeg">
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-more">
-                <span class="menu-item-name">Avocado roll</span>
-                <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$3.45</span>
-              </div>
-            </div>
-          </div>
-
+        <div class="menu-sections">
           <div class="menu-column">
             <div class="menu-item">
+              <p class="menu-item-name">Boston</p>
+              <p class="menu-item-desc">Shrimp, Goberge, Avocado, Cucumber, Mayo</p>
               <div class="menu-item-more">
-                <span class="menu-item-name">Cucumber roll</span>
+                <span class="menu-item-option">ROLL</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$1.95</span>
+                <span class="menu-item-price">$6.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$5.55</span>
               </div>
             </div>
             <div class="menu-item">
-              <p class="menu-item-name">Salmon</p>
+              <p class="menu-item-name">Shrimp Tempura</p>
+              <p class="menu-item-desc">Shrimp tempura, Cucumber, Masago, Tempura, Spicy sauce</p>
               <div class="menu-item-more">
-                <span class="menu-item-option">REGULAR</span>
+                <span class="menu-item-option">ROLL</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.15</span>
+                <span class="menu-item-price">$7.95</span>
               </div>
               <div class="menu-item-more">
-                <span class="menu-item-option">SPICY</span>
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.45</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Vegetarian</p>
+              <p class="menu-item-desc">Goberge, Cucumber, Avocado, Masago, Mayo</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$5.45</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
                 <span class="menu-item-dots"></span>
                 <span class="menu-item-price">$4.45</span>
               </div>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-item">
+              <p class="menu-item-name">California</p>
+              <p class="menu-item-desc">Goberge, Cucumber, Avocado, Masago, Mayo</p>
               <div class="menu-item-more">
-                <span class="menu-item-option">SMOKED</span>
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.45</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
                 <span class="menu-item-dots"></span>
                 <span class="menu-item-price">$4.95</span>
               </div>
             </div>
             <div class="menu-item">
-              <p class="menu-item-name">Shrimp</p>
+              <p class="menu-item-name">Royal</p>
+              <p class="menu-item-desc">Smoked salmon, Goberge, Masago, Tamago, Avocado, Spicy sauce</p>
               <div class="menu-item-more">
-                <span class="menu-item-option">REGULAR</span>
+                <span class="menu-item-option">ROLL</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.75</span>
+                <span class="menu-item-price">$7.95</span>
               </div>
               <div class="menu-item-more">
-                <span class="menu-item-option">SPICY</span>
+                <span class="menu-item-option">CONE</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.95</span>
+                <span class="menu-item-price">$6.95</span>
               </div>
             </div>
             <div class="menu-item">
               <div class="menu-item-more">
-                <span class="menu-item-name">Tamago roll</span>
+                <span class="menu-item-name">Rainbow Roll</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$2.75</span>
+                <span class="menu-item-price">$6.45</span>
+              </div>
+              <p class="menu-item-desc-no">Salmon, Goberge, Cucumber, Avocado, Masago, Mayo</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Quebec Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc-no">Salmon, Avocado, Tempure, Spicy Sauce, Sweet Mayo</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-pic-area">
+              <img class="menu-pic" src="./photos/maki.webp">
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">New York</p>
+              <p class="menu-item-desc">Salmon, Avocado, Tempure, Spicy Sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.45</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$4.95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-area" id="section4">
+        <div class="menu-category">
+          <span>FUTO MAKI · 5 PCS</span>
+        </div>
+        <div class="menu-sections">
+          <div class="menu-column">
+            <div class="menu-pic-area">
+              <img class="menu-pic" src="./photos/cones.jpeg">
+              <div class="menu-pic-area-abs">
+                <div class="menu-abs-title"><strong>Limited Offer</strong> | Free Sushi Cone</div>
+                <div class="menu-abs-text">Get a complimentary cone with purchases of $40 or more — treat yourself! A little bonus to make your meal extra special!</div>
+              </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Dynamite Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc">Smoked salmon, Tempura Shrimp, Cucumber, Avocado, Masago, Goberge, Spicy sauce</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Montral Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc">Salmon, Cucumber, Cream Cheese</p>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Spicy Scallop</p>
+              <p class="menu-item-desc">Scallop, Cucumber, Avocado, Masago, Tempura, Spicy sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.95</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-item">
+              <p class="menu-item-name">Kamikaze</p>
+              <p class="menu-item-desc">Salmon, Avocado, Masago, Tempura, Spicy sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$5.95</span>
+              </div>
+            </div>
+            <br>
+            <div class="menu-item">
+              <p class="menu-item-name">Hawaii</p>
+              <p class="menu-item-desc">Shrimp OR Salmon, Goberge, Avocado, Pineapple, Spicy sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.95</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Spicy Crab</p>
+              <p class="menu-item-desc">Snow crab, Masago, Tempura, Avocado, Spicy mayo</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.45</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.45</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Spicy Tuna</p>
+              <p class="menu-item-desc">Tuna, Tempura, Avocado, Spicy sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.45</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.45</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Mexican</p>
+              <p class="menu-item-desc">Salmon tempura, Cucumber, Masago, Teriyaki Sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$5.95</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Osaka Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.45</span>
+              </div>
+              <p class="menu-item-desc">Smoked salmon, Cucumber, Cream cheese</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-item">
+              <p class="menu-item-name">Tokyo</p>
+              <p class="menu-item-desc">Tuna, Salmon, Masago, Cucumber, Goberge, Spicy sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Spider</p>
+              <p class="menu-item-desc">Soft shell crab, Cucumber, Goberge, Tempura</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.95</span>
+              </div>
+            </div>
+            <br>
+            <div class="menu-item">
+              <p class="menu-item-name">Tao</p>
+              <p class="menu-item-desc">Tuna, Avocado, Goberge, Tempura, Spicy sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.45</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Grilled Eel</p>
+              <p class="menu-item-desc">Grilled eel, Goberge, Avocado, Masago, Tempura</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$6.95</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <p class="menu-item-name">Spicy Lobster</p>
+              <p class="menu-item-desc">Lobster, Avocado, Goberge, Tempura, Spicy Sauce</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">ROLL</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">CONE</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Vegetarian Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$5.95</span>
+              </div>
+              <p class="menu-item-desc">Sweet potato, Avocado, Cucumber, Tempura, Spicy sauce</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-area" id="section5">
+        <div class="menu-category">
+          <span>SPRING MAKI · 2 OR 8 PCS</span>
+        </div>
+        <div class="menu-sections">
+          <div class="menu-column">
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Tuna Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.95</span>
+              </div>
+              <p class="menu-item-desc-no">Tuna, Goberge, Tempura, Masago, Avocado</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Vege Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$5.95</span>
+              </div>
+              <p class="menu-item-desc-no">Tofu, Tamago, Avocado, Cucumber, Wakame</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Kamikaze Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.45</span>
+              </div>
+              <p class="menu-item-desc-no">Salmon, Goberge, Tempura, Masago, Avocado, Spicy sauce</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Shrimp Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc-no">Shrimp, Goberge, Tempura, Masago, Cucumber, Spicy sauce</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Salmon Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc-no">Shrimp, Tempura, Masago, Avocado, Cucumber, Spicy sauce</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-area" id="section6">
+        <div class="menu-category">
+          <span>SUSHI PIZZA + FRIED ROLLS · 5 PCS</span>
+        </div>
+        <div class="menu-sections">
+          <div class="menu-column">
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Sushi Pizza I</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc-no">Avocado, Cucumber, Sweet Potato, Carrot, Spicy sauce, Fried rice</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Sushi Pizza II</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$9.95</span>
+              </div>
+              <p class="menu-item-desc-no">Salmon, Tuno, Tilapia, Tempura, Avocado, Spicy sauce, Fried rice</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+          
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Sushi Pizza III</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$9.95</span>
+              </div>
+              <p class="menu-item-desc-no">Smoked salmon, Goberge, Masago, Tempura, Spicy Mayo, Fried rice</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <!-- <div class="menu-pic-area">
+              <img class="menu-pic" src="./photos/pizza.png">
+            </div> -->
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Sakura Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc-no">Salmon, Goberge, Carrot, Cream Cheese, Sauce</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Dragon Eye Roll</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.95</span>
+              </div>
+              <p class="menu-item-desc-no">Salmon, Tilapia, Goberge, Carrot, Sauce</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-area" id="section7">
+        <div class="menu-category">
+          <span>POKE BOWLS + ENTREES</span>
+        </div>
+        <div class="menu-sections">
+          <div class="menu-column">
+            <div class="menu-item">
+              <p class="menu-item-name">Poke Bowls + Others</p>
+              <p class="menu-item-desc">Base : White rice, Salade, Tempura, Masago, Avocado, Cucumber, Edamame, Wakame, Sesame</p>
+              <div class="menu-item-more">
+                <span class="menu-item-option">SALMON</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$13.45</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">SHRIMP</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$13.95</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">TUNA</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$15.45</span>
+              </div>
+              <div class="menu-item-more">
+                <span class="menu-item-option">SALMON + TUNA</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$14.95</span>
               </div>
             </div>
           </div>
@@ -349,40 +768,186 @@
           <div class="menu-column">
             <div class="menu-item">
               <div class="menu-item-more">
-                <span class="menu-item-name">Goberge Roll</span>
+                <span class="menu-item-name">Miso Soup</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$2.45</span>
+                <span class="menu-item-price">$2.95</span>
               </div>
-            </div>
-            <div class="menu-item">
-              <p class="menu-item-name">Tuna</p>
-              <div class="menu-item-more">
-                <span class="menu-item-option">REGULAR</span>
-                <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.75</span>
-              </div>
-              <div class="menu-item-more">
-                <span class="menu-item-option">SPICY</span>
-                <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.95</span>
-              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">Salmon, Goberge, Cucumber, Avocado, Masago, Mayo</p>
             </div>
             <div class="menu-item">
               <div class="menu-item-more">
-                <span class="menu-item-name">Grilled Eel roll</span>
+                <span class="menu-item-name">Wonton Soup</span>
                 <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$4.95</span>
+                <span class="menu-item-price">$3.50</span>
               </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">Chicken Broth, Pork Wontons, Green Onion, Napa Cabbage</p>
             </div>
-            <div class="menu-item">
-              <div class="menu-item-more">
-                <span class="menu-item-name">Grilled Tofu roll</span>
-                <span class="menu-item-dots"></span>
-                <span class="menu-item-price">$3.15</span>
-              </div>
-            </div>  
           </div>
-        </div> -->
+
+          <div class="menu-column">
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Spring Roll 6pcs</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$4.50</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">Cabbage, Carrot, Vermicelli, Wrapper, Sweet Chili Sauce</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">Wakame Salad</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$4.50</span>
+              </div>
+              <!-- <p class="menu-item-desc-no"><p class="menu-item-desc-no">Chicken Broth, Pork Wontons, Green Onion, Napa Cabbage</p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-area" id="section8">
+        <div class="menu-category">
+          <span>COMBOS + PLATTERS</span>
+        </div>
+        <div class="menu-sections">
+          <div class="menu-column">
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">9 pcs</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$7.55</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">6 California, 3 Kamikaze</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">11 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.55</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">3 California, 3 Salmon, 3 Avocado, 2 Nigiri</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">16 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$13.00</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">3 California, 3 Kamikaze, 3 Salmon, 3 Avocado, 4 Nigiri </p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">22 pcs</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$19.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">10 Futomaki, 6 Maki, 6 Hosomaki</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">24 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$8.55</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">3 California, 3 Kamikaze, 3 Montreal, 3 New York, 3 Avocado, 3 Salmon, 6 Nigiri</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">26 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$25.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">5 Kamikazi, 5 Tokyo, 5 Montreal, 5 Miso Chicken, 6 California</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+                        <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">32 pcs</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$29.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">6 Kamikaze, 5 Spicy tuna, 5 California, 6 Avocado, 6 Salmon, 4 Nigiri</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">34 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$29.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">5 Hawaii, 5 Montreal, 6 Kamikaze, 6 California, 6 Avocado, 6 Goberge</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">40 pcs</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$38.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">10 Futomaki, 6 Maki, 12 Hosomaki, 12 Nigiri</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">41 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$35.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">6 Kamikaze, 5 Tokyo, 6 Rainbow, 6 Chicken, 18 Hosomaki</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">50 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$46.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">20 Futomaki, 18 Maki, 24 Hosomaki, 14 Nigiri</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">60 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$54.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">10 Futomaki, 12 Maki, 24 Hosomaki, 14 Nigiri</p>
+            </div>
+          </div>
+
+          <div class="menu-column">
+            <div class="menu-pic-area">
+              <img class="menu-pic" src="./photos/plateau copy.jpg">
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">68 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$59.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">20 Futomaki, 30 Maki, 18 Hosomaki</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">86 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$76.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">30 Futomaki, 18 Maki, 24 Hosomaki, 14 Nigiri</p>
+            </div>
+            <br>
+            <div class="menu-item">
+              <div class="menu-item-more">
+                <span class="menu-item-name">90 PCS</span>
+                <span class="menu-item-dots"></span>
+                <span class="menu-item-price">$76.95</span>
+              </div>
+              <p class="menu-item-desc-no"><p class="menu-item-desc-no">30 Futomaki, 36 Maki, 24 Hosomaki</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 

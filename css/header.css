@@ -10,8 +10,13 @@ header{
   justify-content: space-between;
   padding: 0 80px 0 55px;
   display: flex;
-  box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+  /* box-shadow: 0 7px 20px rgba(0,0,0,0.3); */
   z-index: 1000;
+}
+.header-pic{
+  height: 80%;
+  width: auto;
+  object-fit: contain;
 }
 
 .header a {
@@ -45,10 +50,10 @@ header{
 }
 .nav-link:hover{
   text-decoration: overline;
-  color: rgb(161, 59, 59);
+  color: rgb(177, 15, 15);
 
 }
 .nav-link.active{
   text-decoration: overline;
-  color: rgb(161, 59, 59);
+  color: rgb(177, 15, 15);
 }
