@@ -1,11 +1,13 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body{
   margin: 0;
   padding:0 ;
   font-family:'Helvetica';
   background-color: rgb(27, 27, 27);
+  overflow-x: hidden;
 }
 
 p{
@@ -20,6 +22,11 @@ p{
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .front-area {
+    background-attachment: scroll;
+  }
 }
 .title-text{
   color: rgb(228, 228, 228);
@@ -476,7 +483,7 @@ p{
   position:absolute;
   top:-90px;
   left:-80px;
-  width: 510px;
+  width: 40%;
   height: 130%;
   background: 
     linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
@@ -539,7 +546,7 @@ p{
   position:absolute;
   top:-90px;
   right:-80px;
-  width: 510px;
+  width: 40%;
   height: 130%;
   background: 
     linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
