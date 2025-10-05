@@ -18,11 +18,14 @@ p{
   margin-top:0px;
   height: 800px;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../photos/front_photo.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../photos/front_photo.jpeg);
   background-attachment:fixed;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
 }
 @media (max-width: 768px) {
   .front-image-area {
@@ -484,7 +487,7 @@ p{
 .about-pic{
   position:absolute;
   top:-90px;
-  left:-80px;
+  left:-5%;
   width: 40%;
   height: 130%;
   background: 
@@ -499,7 +502,7 @@ p{
   width: 57.5%;
   height: 100%;
   position: relative;
-  left: 470px;
+  left: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -548,7 +551,7 @@ p{
 .review-pic{
   position:absolute;
   top:-90px;
-  right:-80px;
+  right:-6%;
   width: 40%;
   height: 130%;
   background: 
@@ -563,7 +566,7 @@ p{
   width: 57.5%;
   height: 100%;
   position:absolute;
-  right:420px;
+  right:35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
