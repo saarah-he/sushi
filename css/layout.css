@@ -18,13 +18,13 @@ p{
   height: 800px;
   width: 100%;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../photos/front_photo.jpeg);
-  background-attachment: fixed;
+  background-attachment:fixed;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
-  .front-area {
+  .front-image-area {
     background-attachment: scroll;
   }
 }
