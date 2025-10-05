@@ -8,6 +8,7 @@ body{
   font-family:'Helvetica';
   background-color: rgb(27, 27, 27);
   overflow-x: hidden;
+  -webkit-transform: translateZ(0);
 }
 
 p{
@@ -469,6 +470,7 @@ p{
   justify-content: flex-end;
   padding-top: 30px;
   background-color: rgb(245, 245, 245);
+  margin-top: -1px;
 }
 .about-box{
   position:relative;
@@ -531,6 +533,7 @@ p{
   padding-bottom: 130px;
   padding-top:50px;
   background-color: rgb(245, 245, 245);
+  margin-top: -1px;
 }
 .review-box{
   position:relative;
