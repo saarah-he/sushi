@@ -1,11 +1,21 @@
+:root{
+  --red: rgb(177, 15, 15);
+  --redhover: rgb(149, 12, 12);
+  --redactive: rgb(122, 10, 10);
+  --lightgreybg: rgb(245, 245, 245);
+  --greyblack: rgb(40, 40, 40);
+  --salmon: rgb(255, 165, 165);
+}
+
 html {
   scroll-behavior: smooth;
+  
 }
 body{
   margin: 0;
   padding:0 ;
   font-family:'Helvetica';
-  /* background-color: rgb(27, 27, 27); */
+  /* background-color: rgb(40, 40, 40); */
 }
 
 p{
@@ -15,7 +25,7 @@ p{
 main{
   display: grid;
   grid-template-columns: 250px 1fr;
-  height: 5100px;
+  height: 5150px;
   align-items: start;
 }
 
@@ -24,6 +34,7 @@ main{
 aside{
   position:sticky;
   top:65px;
+  background-color: white;
 }
 
 .sidebar{
@@ -54,6 +65,7 @@ aside{
 
 /* FRONT AREA */
 .front-area{
+  margin-top: 62px;
   height: 300px;
   background-color: rgb(239, 239, 239);
   display: flex;
@@ -62,11 +74,7 @@ aside{
   justify-content: center;
   gap:0px;
   position:relative;
-  /* background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url(../photos/jap-circle.webp);
-  background-attachment: fixed;
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat; */
+  
 }
 .front-pic-area{
   height: 126%;
@@ -75,14 +83,6 @@ aside{
   bottom:0;
   position:absolute;
 }
-/* .front-pic-area-left{
-  height: 100%;
-  width: auto;
-  top:0;
-  bottom:0;
-  left:50px;
-  position:absolute;
-} */
 .front-pic{
   height: 100%;
   object-fit: contain;
@@ -106,6 +106,7 @@ aside{
   font-size: 15px;
   font-family:helvetica;
   text-decoration: underline;
+  padding-right: 10px;
 }
 .front-pdf:hover{
   cursor: pointer;
@@ -118,7 +119,8 @@ aside{
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;;
+  align-items: center;
+  background-color: white;
 }
 .menu-category{
   display: flex;             /* enables flexbox layout */
@@ -254,4 +256,53 @@ aside{
   font-size: 13px;
   padding-top: 4px;
   margin: 0;
+}
+
+
+/* UP ARROW */
+.menu-back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: rgb(177, 15, 15);
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, 
+              opacity 0.4s ease, 
+              transform 0.4s ease, 
+              bottom 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(40px); /* slide up effect */
+  z-index: 1000;
+}
+
+.menu-back-to-top.visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+  bottom: 25px; /* final resting position */
+}
+.menu-back-to-top:hover {
+  background-color: rgb(153, 13, 13);
+  cursor: pointer;
+}
+
+
+/* COPYRIGHT SECTION */
+.copyright-area{
+  height: 9vh;
+  background-color: rgb(232, 232, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright-area p{
+  color: rgb(63, 63, 63);
+  font-size: 0.8rem;
+  padding-top:10px;
 }

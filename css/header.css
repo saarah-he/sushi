@@ -3,15 +3,21 @@ header{
   right:0;
   top: 0;
   height: 65px;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(30, 30, 30);
+  /* background-color: rgb(245, 245, 245); */
   margin: 0;
-  position: sticky;
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 80px 0 55px;
+  padding: 0 80px 0 45px;
   display: flex;
   /* box-shadow: 0 7px 20px rgba(0,0,0,0.3); */
-  z-index: 1000;
+  z-index: 20;
+  transition: background-color 0.3s ease;
+  
+}
+header.transparent {
+  background-color: transparent;
 }
 .header-pic{
   height: 80%;
@@ -21,26 +27,56 @@ header{
 
 .header a {
   text-decoration: none;
-  color: rgb(204, 202, 202);  
+  color: rgb(232, 232, 232);  
 }
 
-.left {
+header .left {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1000;
+  padding-left: 20px;
+}
+.header-svg{
+  height: 100%;
+  aspect-ratio: 1/1;
+  /* background-color: lightpink; */
+}
+.header-svg svg{
+  padding-top: 3px;
+  height: 92%;
+  width: auto;
 }
 
-.logo{
-  font-size: 40px;
+/* 
+.logo-pic-area{
+  height: 100%;
+  aspect-ratio: 1/1;
+  z-index:1000;
+}
+.logo-pic{
+  padding-top:3px;
+  height: 90%;
+  object-fit: contain;
+} */
+
+.logo-text{
+  font-size: 2.5rem;
   font-weight: 500;
   font-family: 'Cormorant Garamond';
+  white-space: nowrap;
+}
+header.transparent .header-svg svg{
+  opacity: 0;
 }
 
-.navs{
+header .navs{
   display: flex;
   align-items: center;
   gap: 50px;
   flex-direction: row;
   flex-shrink: 0;
+  
 }
 
 .nav-link{
@@ -50,10 +86,10 @@ header{
 }
 .nav-link:hover{
   text-decoration: overline;
-  color: rgb(177, 15, 15);
+  color: var(--salmon);
 
 }
 .nav-link.active{
   text-decoration: overline;
-  color: rgb(177, 15, 15);
+  color: var(--salmon);
 }
